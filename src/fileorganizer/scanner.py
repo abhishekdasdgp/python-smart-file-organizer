@@ -9,6 +9,7 @@ def cleanFilePath(filePath):
 
 def scanFolder(filePath):
     filePath = cleanFilePath(filePath)
+    directory = Path(filePath)
     file_set = list()
     print(f"File Path:: {filePath}")
     
@@ -23,7 +24,7 @@ def scanFolder(filePath):
         )
         
     try:
-        for path in Path(filePath).iterdir():
+        for path in directory.iterdir():
                 if path.is_dir():
                     pass
                 else:
