@@ -1,4 +1,5 @@
-from scanner import *
+from config.filetypes import *
 
-filePath = input("Enter file path:: ")
-scanFolder("D:\\Personal Drive\\Photos\\Nainital")
+extension = ".doc3"
+
+print(getMapping(extension))
