@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from metadata import *
+from src.fileorganizer.metadata import *
 
 def cleanFilePath(filePath):
     stripedFilePath = filePath.strip()
@@ -28,7 +28,7 @@ def scanFolder(filePath):
                 if path.is_dir():
                     pass
                 else:
-                    metadata = FileMetaData(path.name,path.stem,path.suffix,path.parent,path.stat().st_size)
+                    metadata = FileMetaData(path.name,path.stem,path.suffix,path.absolute(),path.stat().st_size)
                     file_set.append(metadata)
     except FileNotFoundError:
         raise FileNotFoundError(f"Error: The system could not find the path: {filePath}")   

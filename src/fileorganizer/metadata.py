@@ -5,7 +5,7 @@ class FileMetaData:
     name:str
     stem:str
     suffix:str
-    parent:str
+    fullpath:str
     size:int
         
         

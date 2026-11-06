@@ -1,5 +1,3 @@
-from config.filetypes import *
+from src.fileorganizer.categorizer import *
 
-extension = ".doc3"
-
-print(getMapping(extension))
+categoriser("D:\\Personal Drive\\Photos\\Nainital")
