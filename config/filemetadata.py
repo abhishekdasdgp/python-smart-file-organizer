@@ -1,7 +1,8 @@
 from dataclasses import dataclass
+from pathlib import Path
 
 @dataclass
 class FileMetaData:
     filename: str
-    source: str
-    dest: str
+    source: Path
+    dest: Path
