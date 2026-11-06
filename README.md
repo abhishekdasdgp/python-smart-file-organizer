@@ -1,3 +1,11 @@
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Release](https://img.shields.io/github/v/release/abhishekdasdgp/python-smart-file-organizer?color=brightgreen)](https://github.com/abhishekdasdgp/python-smart-file-organizer/releases)
+[![License](https://img.shields.io/github/license/abhishekdasdgp/python-smart-file-organizer)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue?logo=windows)](https://github.com/abhishekdasdgp/python-smart-file-organizer)
+[![Downloads](https://img.shields.io/github/downloads/abhishekdasdgp/python-smart-file-organizer/total?color=orange)](https://github.com/abhishekdasdgp/python-smart-file-organizer/releases)
+
+
 # Python Smart File Organizer 📁
 
 A Python-based utility that automatically scans, categorizes, and organizes files into dedicated folders based on their file extensions.
