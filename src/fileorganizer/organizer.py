@@ -1,8 +1,11 @@
 from pathlib import Path
+import shutil
 
 def organizer(fileLocation,parentPath:str):
-    for k,v in fileLocation.items():
-        location = Path(parentPath) / k
+   for category, files in fileLocation.items():
+        location = Path(parentPath) / category
         location.mkdir(parents=True, exist_ok=True)
-        for item in v:
-            item.source.rename(item.dest)    
+
+        for item in files:
+            destination = location / item.filename
+            shutil.move(str(item.source), str(destination))
